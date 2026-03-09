@@ -5,7 +5,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     label: 'Gói Combo',
     anchor: 'combo',
     imagePosition: 'right',
-    image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80',
+    image: 'bannersection1.jpg',
     imageAlt: 'Nail combo service at The OM Lounge',
     services: [
       { id: 'c1', name: 'Perfectly Polished', description: 'Làm mới màu sắc (Mani hoặc Pedi) với sơn thường hoặc gel cao cấp', price: 390000, duration: 45 },
@@ -28,6 +28,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
       { id: 'm4', name: 'Perfectly Polished', description: 'Làm mới màu sắc (Mani hoặc Pedi)...', price: 390000, duration: 30 },
       { id: 'm5', name: 'Perfectly Polished', description: 'Làm mới màu sắc (Mani hoặc Pedi)...', price: 390000, duration: 30 },
       { id: 'm6', name: 'Perfectly Polished', description: 'Làm mới màu sắc (Mani hoặc Pedi)...', price: 390000, duration: 30 },
+      { id: 'm7', name: 'Perfectly Polished', description: 'Làm mới màu sắc (Mani hoặc Pedi)...', price: 390000, duration: 30 },
     ],
   },
   {
@@ -35,7 +36,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     label: 'Pedicure',
     anchor: 'pedicure',
     imagePosition: 'right',
-    image: 'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=800&q=80',
+    image: 'bannersection2.png',
     imageAlt: 'Pedicure service at The OM Lounge',
     services: [
       { id: 'p1', name: 'Perfectly Polished', description: 'Làm mới màu sắc (Mani hoặc Pedi)...', price: 390000, duration: 45 },
@@ -49,7 +50,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     label: 'Hiệu Ứng',
     anchor: 'hieuung',
     imagePosition: 'left',
-    image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80',
+    image: 'bannersection4.png',
     imageAlt: 'Nail art effects at The OM Lounge',
     services: [
       { id: 'h1', name: 'Perfectly Polished', description: 'Làm mới màu sắc (Mani hoặc Pedi)...', price: 390000, duration: 20 },
@@ -65,19 +66,14 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     label: 'Drinks',
     anchor: 'drinks',
     imagePosition: 'right',
-    image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80',
+    image: 'bannersection5.jpg',
     imageAlt: 'Drinks at The OM Lounge',
     services: [
       { id: 'd1', name: 'Latte', description: 'Cà phê sữa đặc trưng, hương thơm nồng nàn', price: 55000 },
       { id: 'd2', name: 'Cappuccino', description: 'Espresso, sữa hấp và bọt sữa mịn', price: 55000 },
       { id: 'd3', name: 'Americano', description: 'Espresso pha loãng với nước nóng', price: 45000 },
       { id: 'd4', name: 'Trà...', description: 'Trà thảo mộc tự nhiên, thư giãn tâm trí', price: 45000 },
-      { id: 'd5', name: 'Nước ép', description: 'Nước ép hoa quả tươi theo mùa', price: 65000 },
-      { id: 'd6', name: 'Chanh leo', description: 'Chanh leo tươi mát, vị chua ngọt', price: 55000 },
-      { id: 'd7', name: 'Đào', description: 'Trà đào cam sả thư giãn', price: 55000 },
-      { id: 'd8', name: 'Khế blue', description: 'Blue pea flower & khế tươi', price: 65000 },
-      { id: 'd9', name: 'Sữa', description: 'Sữa nóng hoặc lạnh', price: 35000 },
-      { id: 'd10', name: 'Nước', description: 'Nước lọc', price: 15000 },
+    
     ],
   },
 ];
@@ -101,6 +97,14 @@ export const REVIEWS = [
   },
   {
     id: 3,
+    name: 'John Doe',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80',
+    image: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&q=80',
+    text: 'Visited The OM Lounge 2 weeks ago and already booked again! The atmosphere is so relaxing and the nail technicians are highly skilled.',
+    shortText: 'Visited The OM Lounge 2 weeks ago...',
+  },
+  {
+    id: 4,
     name: 'John Doe',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80',
     image: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&q=80',
