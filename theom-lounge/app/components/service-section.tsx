@@ -19,7 +19,7 @@ export function ServiceSection({ category, onAdd }: ServiceSectionProps) {
       <section id={category.anchor} className="py-16! scroll-mt-32!">
         <div className="mx-auto px-12! grid grid-cols-1 lg:grid-cols-2 gap-12! items-start">
           {/* Image */}
-          <div className="relative  aspect-[4/3]  overflow-hidden rounded-sm">
+          <div className="relative  aspect-[5/3]  overflow-hidden rounded-sm">
 
             <img
               src={`/banner/${category.image}`}
@@ -47,7 +47,7 @@ export function ServiceSection({ category, onAdd }: ServiceSectionProps) {
     return (
       <section id={category.anchor} className="py-16! scroll-mt-32!">
         <div
-          className={`mx-auto px-12! h-full grid grid-cols-1 lg:grid-cols-2 gap-12! items-start  ${isRight ? "" : "lg:grid-flow-dense"}`}
+          className="mx-auto px-12! h-full grid grid-cols-1 lg:grid-cols-2 gap-12! items-start"
         >
           {/* Services */}
           <div>
@@ -59,7 +59,7 @@ export function ServiceSection({ category, onAdd }: ServiceSectionProps) {
             ))}
           </div>
           {/* Image */}
-          <div className="relative  aspect-[4/4] h-full overflow-hidden rounded-sm">
+          <div className="relative h-full overflow-hidden rounded-sm">
             <img
               src={`/banner/${category.image}`}
               alt={category.imageAlt}

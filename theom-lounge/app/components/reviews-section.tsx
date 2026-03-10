@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { REVIEWS } from '@/data/services';
+import { useState } from "react";
+import { REVIEWS } from "@/data/services";
 
 export function ReviewsSection() {
   const [active, setActive] = useState(0);
@@ -31,7 +31,7 @@ export function ReviewsSection() {
         className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage:
-            'radial-gradient(circle at 30% 50%, #c8a96e 0%, transparent 60%)',
+            "radial-gradient(circle at 30% 50%, #c8a96e 0%, transparent 60%)",
         }}
       />
       <div className="relative z-10 mx-auto px-6! text-center">
@@ -53,8 +53,18 @@ export function ReviewsSection() {
             className="absolute left-0 z-20 p-2 text-white/60 hover:text-om-gold transition-colors"
             aria-label="Previous review"
           >
-            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            <svg
+              className="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
             </svg>
           </button>
 
@@ -65,12 +75,14 @@ export function ReviewsSection() {
                 key={r.id}
                 className={`relative text-left rounded-sm overflow-hidden transition-all duration-300 flex-shrink-0 ${
                   i === 1
-                    ? 'ring-2 ring-om-gold/80 w-160 h-190'
-                    : 'opacity-50 w-110 hover:opacity-70'
+                    ? "ring-2 ring-om-gold/80 w-100"
+                    : "opacity-50 w-50  hover:opacity-70"
                 }`}
               >
                 {/* Image */}
-                <div className={`overflow-hidden ${i === 1 ? 'aspect-[4/3]' : 'aspect-[4/5]'}`}>
+                <div
+                  className={`overflow-hidden ${i === 1 ? "aspect-[4/3]" : "aspect-[4/5]"}`}
+                >
                   <img
                     src={r.image}
                     alt={`Review từ ${r.name}`}
@@ -82,18 +94,17 @@ export function ReviewsSection() {
                 </div>
 
                 {/* Content */}
-                <div className="bg-om-brown/90 p-4 min-h-[180px]">
-                  <div className="flex items-center gap-2 mb-2!">
+                <div className="bg-om-brown/90 p-4! min-h-[180px]">
+                  <div className="flex items-start gap-3 mb-2!">
                     <img
                       src={r.avatar}
                       alt={r.name}
-                      className="w-8 h-8 rounded-full object-cover"
-                      width={32}
-                      height={32}
+                      className="w-50 h-20 rounded-full object-cover"
+                      width={20}
+                      height={20}
                       loading="lazy"
                     />
-                    <div>
-                      <p className="font-semibold text-white text-sm">{r.name}</p>
+                    {/* <div>
                       <svg
                         className="w-5 h-5 text-om-gold opacity-60"
                         fill="currentColor"
@@ -101,12 +112,19 @@ export function ReviewsSection() {
                       >
                         <path d="M3 21c0 .55.45 1 1 1h7V10H4c-.55 0-1 .45-1 1v10zM14 22h7c.55 0 1-.45 1-1V11c0-.55-.45-1-1-1h-7v12zM8 3C5.24 3 3 5.24 3 8h5V3zm8 0v5h5c0-2.76-2.24-5-5-5z" />
                       </svg>
+                    </div> */}
+                    <div className="flex flex-col">
+                      <p className="font-semibold text-white text-4xl ">
+                        {r.name}
+                      </p>
+
+                      <p className="text-white/70 text-xs leading-relaxed line-clamp-3 text-[28px]">
+                        {r.text}
+                      </p>
                     </div>
                   </div>
-                  <p className="text-white/70 text-xs leading-relaxed line-clamp-3">
-                    {r.text}
-                  </p>
-                  <button className="text-om-gold text-xs mt-2! hover:underline">
+
+                  <button className="text-om-gold text-[28px] mt-2! hover:underline">
                     Xem thêm
                   </button>
                 </div>
@@ -120,8 +138,18 @@ export function ReviewsSection() {
             className="absolute right-0 z-20 p-2 text-white/60 hover:text-om-gold transition-colors"
             aria-label="Next review"
           >
-            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            <svg
+              className="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
             </svg>
           </button>
         </div>
@@ -135,8 +163,8 @@ export function ReviewsSection() {
               aria-label={`Review ${i + 1}`}
               className={`rounded-full transition-all bg-red-800 ${
                 active === i
-                  ? 'w-8 h-2 bg-om-gold'
-                  : 'w-2 h-2 bg-white/30 hover:bg-white/50'
+                  ? "w-8 h-2 bg-om-gold"
+                  : "w-2 h-2 bg-white/30 hover:bg-white/50"
               }`}
             />
           ))}
