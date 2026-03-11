@@ -132,7 +132,7 @@ export function ReviewsSection() {
                       {r.name}
                     </p>
                   </div>
-                  <p className="text-white/65 text-xs leading-relaxed line-clamp-4">
+                  <p className="text-white/65 text-[14px] leading-relaxed line-clamp-4">
                     {r.text}
                   </p>
                   <button className="text-om-gold text-xs mt-2! hover:underline transition-colors">

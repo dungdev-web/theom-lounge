@@ -51,7 +51,7 @@ export function ServiceSection({ category, onAdd }: ServiceSectionProps) {
         >
           {/* Services */}
           <div>
-            <h2 className="font-serif text-3xl font-medium text-om-brown mb-6!">
+            <h2 className="font-serif text-3xl font-medium  mb-6!">
               {category.label}
             </h2>
             {category.services.map((s) => (
