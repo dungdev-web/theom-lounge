@@ -27,15 +27,15 @@ export function CartPanel({
       role="dialog"
       aria-modal="true"
       aria-label="Giỏ hàng"
-      className="flex flex-col h-full bg-om-cream-dark"
+      className="flex flex-col h-full bg-[#FAF5EB]"
     >
       {/* Header */}
-      <div className="px-6! py-4! border-b border-[#b9b8b8] bg-om-cream bg-white">
+      <div className="px-6! py-4! border-b border-[#00000012] bg-om-cream ">
         <h2 className="font-serif text-3xl text-[#824C08] text-center">Giỏ Hàng</h2>
       </div>
 
       {/* Items */}
-      <div className="flex-1 overflow-y-auto px-4! py-4! space-y-3 bg-white ">
+      <div className="flex-1 overflow-y-auto px-4! py-4! space-y-3  ">
         {items.length === 0 ? (
           <p className="text-center text-om-brown/50 text-sm pt-10">Giỏ hàng trống</p>
         ) : (
@@ -60,7 +60,7 @@ export function CartPanel({
       </div>
 
       {/* Footer */}
-      <div className=" bg-om-cream px-6! py-5! space-y-4 bg-white">
+      <div className=" bg-om-cream px-6! py-5! space-y-4 ">
         {/* Technician */}
         <div className="flex items-center justify-between">
           <span className="text-sm text-[#888888]">Kỹ thuật viên</span>

@@ -114,18 +114,36 @@ export const REVIEWS = [
 ];
 
 export const DATES = [
-  { label: 'Thứ 5', sub: '04/09', value: '2024-09-04' },
-  { label: 'Thứ 6', sub: '05/09', value: '2024-09-05' },
+  { label: 'Thứ 2', sub: '01/09', value: '2024-09-01',dissable: false },
+  { label: 'Thứ 3', sub: '02/09', value: '2024-09-02',dissable: false },
+  { label: 'Thứ 4', sub: '03/09', value: '2024-09-03',dissable: false },
+  { label: 'Thứ 5', sub: '04/09', value: '2024-09-04',dissable: false  },
+  { label: 'Thứ 6', sub: '05/09', value: '2024-09-05',dissable: true },
   { label: 'Thứ 7', sub: '06/09', value: '2024-09-06', active: true },
   { label: 'Chủ Nhật', sub: '07/09', value: '2024-09-07' },
 ];
 
 export const TIMES = [
-  '09:00', '09:30', '10:00', '10:30',
-  '11:00', '11:30', '12:00', '12:30',
-  '13:00', '13:30', '14:00', '14:30',
-  '15:00', '15:30', '16:00', '16:30',
-  '17:00', '17:30', '18:00', '18:30',
+  { value: '09:00', disabled: false },
+  { value: '09:30', disabled: true },
+  { value: '10:00', disabled: false },
+  { value: '10:30', disabled: false },
+  { value: '11:00', disabled: true },
+  { value: '11:30', disabled: false },
+  { value: '12:00', disabled: false },
+  { value: '12:30', disabled: false },
+  { value: '13:00', disabled: false },
+  { value: '13:30', disabled: false },
+  { value: '14:00', disabled: true },
+  { value: '14:30', disabled: false },
+  { value: '15:00', disabled: false },
+  { value: '15:30', disabled: false },
+  { value: '16:00', disabled: false },
+  { value: '16:30', disabled: true },
+  { value: '17:00', disabled: false },
+  { value: '17:30', disabled: false },
+  { value: '18:00', disabled: false },
+  { value: '18:30', disabled: false },
 ];
 
 export const INITIAL_CART = [
