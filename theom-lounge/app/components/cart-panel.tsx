@@ -30,8 +30,8 @@ export function CartPanel({
       className="flex flex-col h-full bg-om-cream-dark"
     >
       {/* Header */}
-      <div className="px-6! py-4! border-b border-om-brown/10 bg-om-cream bg-white">
-        <h2 className="font-serif text-xl text-om-brown text-center">Giỏ Hàng</h2>
+      <div className="px-6! py-4! border-b border-[#b9b8b8] bg-om-cream bg-white">
+        <h2 className="font-serif text-3xl text-[#824C08] text-center">Giỏ Hàng</h2>
       </div>
 
       {/* Items */}
@@ -63,8 +63,8 @@ export function CartPanel({
       <div className=" bg-om-cream px-6! py-5! space-y-4 bg-white">
         {/* Technician */}
         <div className="flex items-center justify-between">
-          <span className="text-sm text-om-brown/60">Kỹ thuật viên</span>
-          <button className="flex items-center gap-2 text-sm text-om-brown hover:text-om-dark transition-colors">
+          <span className="text-sm text-[#888888]">Kỹ thuật viên</span>
+          <button className="flex items-center gap-2 text-sm text-[#000000] transition-colors">
             <img
               src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&q=80"
               alt="Võ Thị Bích Phượng"
@@ -80,15 +80,15 @@ export function CartPanel({
         </div>
 
         {/* Total */}
-        <div className="flex items-center justify-between pt-4!">
-          <span className="text-sm text-om-brown/70">Tổng thanh toán</span>
-          <span className="text-lg font-semibold text-om-gold">{fmt(total)}</span>
+        <div className="flex items-center justify-between pt-4! text-[#000000]">
+          <span className="text-sm">Tổng thanh toán</span>
+          <span className="text-lg font-semibold text-[#F36363]">{fmt(total)}</span>
         </div>
 
         {/* CTA */}
         <button
           onClick={onProceed}
-          className="w-full button bg-om-brown text-white py-3.5! text-sm font-medium tracking-wider flex items-center justify-center gap-2 hover:bg-om-dark transition-colors"
+          className="w-full button bg-om-brown text-white py-3.5! px-4! text-sm font-medium tracking-wider flex items-center justify-between gap-2 hover:bg-om-dark transition-colors"
         >
           Tiếp Tục
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
