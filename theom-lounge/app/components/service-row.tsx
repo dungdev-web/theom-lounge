@@ -18,15 +18,15 @@ interface ServiceRowProps {
 export function ServiceRow({ service, onAdd }: ServiceRowProps) {
   return (
     <article
-      className="service-row flex items-start justify-between py-5! border-b border-om-brown/8 group cursor-default "
+      className="service-row flex items-start justify-between py-5!  group cursor-default "
       aria-label={`${service.name} - ${fmt(service.price)}`}
     >
       <div className="flex-1 pr-6!">
-        <h3 className="font-serif text-base font-medium text-om-brown group-hover:text-om-dark transition-colors">
+        <h3 className="font-serif text-xl font-medium text-white group-hover:text-om-dark transition-colors">
           {service.name}
         </h3>
-        <p className="text-sm text-om-brown/55 mt-0.5! leading-relaxed">{service.description}</p>
-        <p className="text-sm font-semibold text-om-brown/70 mt-2!">
+        <p className="text-sm text-[#B4AA9B] mt-0.5! leading-relaxed">{service.description}</p>
+        <p className="text-xl font-semibold text-[#DAD7CD] mt-2!">
           {Math.round(service.price / 1000)}k
         </p>
       </div>

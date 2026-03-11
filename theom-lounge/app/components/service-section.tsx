@@ -19,7 +19,7 @@ export function ServiceSection({ category, onAdd }: ServiceSectionProps) {
       <section id={category.anchor} className="py-16! scroll-mt-32!">
         <div className="mx-auto px-12! grid grid-cols-1 lg:grid-cols-2 gap-12! items-start">
           {/* Image */}
-          <div className="relative  aspect-6.5/5  overflow-hidden rounded-sm">
+          <div className="relative aspect-6/5 overflow-hidden rounded-sm">
 
             <img
               src={`/banner/${category.image}`}
@@ -32,7 +32,7 @@ export function ServiceSection({ category, onAdd }: ServiceSectionProps) {
           </div>
           {/* Services */}
           <div>
-            <h2 className="font-serif text-3xl font-medium text-om-brown mb-6!">
+            <h2 className="font-serif text-6xl font-medium text-om-brown mb-6!">
               {category.label}
             </h2>
             {category.services.map((s) => (
@@ -51,7 +51,7 @@ export function ServiceSection({ category, onAdd }: ServiceSectionProps) {
         >
           {/* Services */}
           <div>
-            <h2 className="font-serif text-3xl font-medium  mb-6!">
+            <h2 className="font-serif text-6xl font-medium  mb-6!">
               {category.label}
             </h2>
             {category.services.map((s) => (
@@ -59,11 +59,11 @@ export function ServiceSection({ category, onAdd }: ServiceSectionProps) {
             ))}
           </div>
           {/* Image */}
-          <div className="relative h-full overflow-hidden rounded-sm">
+          <div className="relative aspect-3/3 h-full overflow-hidden rounded-sm">
             <img
               src={`/banner/${category.image}`}
               alt={category.imageAlt}
-              className={`w-full  object-cover hover:scale-105 transition-transform duration-700 ${category.anchor==="manicure" ? "aspect-4/5" : "h-full"}`}
+              className={`w-full  object-cover  h-full hover:scale-105 transition-transform duration-700`}
               loading="lazy"
               width={900}
               height={900}
