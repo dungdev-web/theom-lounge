@@ -129,10 +129,10 @@ export const TIMES = [
 ];
 
 export const INITIAL_CART = [
-  { service: { id: 'sg1', name: 'Sơn gel', description: 'Sơn gel cao cấp bền màu', price: 264000, duration: 10,image:"gelcaocap.jpg" }, effect: undefined, parentId: undefined },
+  { service: { id: 'sg1', name: 'Sơn gel', description: 'Sơn gel cao cấp bền màu', price: 264000, duration: 10,image:"gelcaocap.jpg" },quantity: 1, effect: undefined, parentId: undefined },
   { service: { id: 'hu1', name: 'Hiệu ứng', description: 'Hiệu ứng: Da beo', price: 88000, duration: 10,image:"dabeo.jpg" }, quantity: 1, effect: 'Da beo', parentId: 'sg1' },
   { service: { id: 'hu2', name: 'Hiệu ứng', description: 'Hiệu ứng: Da beo', price: 88000, duration: 10,image:"dabeo.jpg" }, quantity: 2, effect: 'Da beo', parentId: 'sg1' },
-  { service: { id: 'mm1', name: 'Mắt mèo', description: 'Hiệu ứng mắt mèo óng ánh', price: 88000, duration: 10,image:"dabeo.jpg" }, effect: undefined, parentId: undefined },
-  { service: { id: 'sn1', name: 'Sơn nhũ', description: 'Sơn nhũ kim loại sang trọng', price: 88000, duration: 10,image:"dabeo.jpg" }, effect: undefined, parentId: undefined },
-  { service: { id: 'sg2', name: 'Sơn gel', description: 'Sơn gel bền màu 3 tuần', price: 88000, duration: 10,image:"dabeo.jpg" }, effect: undefined, parentId: undefined },
+  { service: { id: 'mm1', name: 'Mắt mèo', description: 'Hiệu ứng mắt mèo óng ánh', price: 88000, duration: 10,image:"dabeo.jpg" }, quantity:1,effect: undefined, parentId: undefined },
+  { service: { id: 'sn1', name: 'Sơn nhũ', description: 'Sơn nhũ kim loại sang trọng', price: 88000, duration: 10,image:"dabeo.jpg" }, quantity:1,effect: undefined, parentId: undefined },
+  { service: { id: 'sg2', name: 'Sơn gel', description: 'Sơn gel bền màu 3 tuần', price: 88000, duration: 10,image:"dabeo.jpg" }, quantity:1,effect: undefined, parentId: undefined },
 ];
