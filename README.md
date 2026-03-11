@@ -1,4 +1,4 @@
-# 🌸 Theom Lounge 🌸
+# Theom Lounge
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
@@ -9,55 +9,54 @@
 [![GitHub Forks](https://img.shields.io/github/forks/dungdev-web/theom-lounge?style=for-the-badge&color=blue)](https://github.com/dungdev-web/theom-lounge/network/members)
 [![GitHub Issues](https://img.shields.io/github/issues/dungdev-web/theom-lounge?style=for-the-badge&color=red)](https://github.com/dungdev-web/theom-lounge/issues)
 
-> ✨ Experience elegance and seamless service booking with Theom Lounge – your gateway to relaxation and beauty. ✨
+> Experience elegance and seamless service booking with Theom Lounge – your gateway to relaxation and beauty. 
 
 Theom Lounge is a modern, beautifully crafted web application designed to provide an intuitive and engaging online presence for beauty salons, wellness centers, or exclusive lounges. Built with Next.js, React, and TypeScript, it offers a smooth user experience for browsing services, adding them to a cart, and initiating a booking process. With a focus on aesthetic appeal and user-friendliness, Theom Lounge aims to elevate the digital experience for both businesses and their clients.
 
-## 🚀 Live Demo
+## Live Demo
 
 Explore the live application to see Theom Lounge in action:
 
-👉 [**theom-lounge.vercel.app**](https://theom-lounge.vercel.app)
+[**theom-lounge.vercel.app**](https://theom-lounge.vercel.app/)
 
-## 🌟 Key Features
+## Key Features
 
 Theom Lounge comes packed with features to provide a delightful user experience:
 
-*   **🎨 Visually Stunning UI:** A modern and elegant design, complemented by beautiful banner images and service showcases.
-*   **🛒 Interactive Service Catalog:** Browse a wide range of services categorized for easy navigation.
-*   **➕ Seamless Cart Experience:** Add desired services to a dynamic cart panel, review selections, and proceed to booking.
-*   **🗓️ Intuitive Booking Flow:** A dedicated booking panel to guide users through the reservation process.
-*   **✨ Dynamic UI Effects:** Enhance user engagement with subtle parallax scrolling and other interactive elements.
-*   **📱 Fully Responsive Design:** Optimized for a flawless experience across all devices, from desktops to mobile phones, thanks to Tailwind CSS.
-*   **⚡ Blazing Fast Performance:** Leverages Next.js for server-side rendering (SSR) or static site generation (SSG) to deliver a swift browsing experience.
-*   **🔧 Modern Tech Stack:** Built with cutting-edge technologies like Next.js, React, and TypeScript for robust and maintainable code.
+*   **Visually Stunning UI:** A modern and elegant design, complemented by beautiful banner images and service showcases.
+*   **Interactive Service Catalog:** Browse a wide range of services categorized for easy navigation.
+*   **Seamless Cart Experience:** Add desired services to a dynamic cart panel, review selections, and proceed to booking.
+*   **Intuitive Booking Flow:** A dedicated booking panel to guide users through the reservation process.
+*   **Dynamic UI Effects:** Enhance user engagement with subtle parallax scrolling and other interactive elements.
+*   **Fully Responsive Design:** Optimized for a flawless experience across all devices, from desktops to mobile phones, thanks to Tailwind CSS.
+*   **Blazing Fast Performance:** Leverages Next.js for server-side rendering (SSR) or static site generation (SSG) to deliver a swift browsing experience.
+*   **Modern Tech Stack:** Built with cutting-edge technologies like Next.js, React, and TypeScript for robust and maintainable code.
 
-## 🎯 Use Cases
+## Use Cases
 
 *   **Beauty Salons & Spas:** Provide an online platform for clients to discover services, view pricing, and book appointments.
 *   **Wellness & Massage Centers:** Showcase therapy options and allow customers to schedule sessions conveniently.
 *   **Exclusive Lounges:** Offer a digital storefront for unique experiences, membership sign-ups, or event bookings.
 *   **Portfolio Project:** A great example of a modern web application built with a robust frontend stack.
 
-## 📚 Table of Contents
+## Table of Contents
 
-*   [🚀 Live Demo](#--live-demo)
-*   [🌟 Key Features](#--key-features)
-*   [🎯 Use Cases](#-use-cases)
-*   [📚 Table of Contents](#-table-of-contents)
-*   [🛠️ Technologies Used](#%EF%B8%8F-technologies-used)
-*   [📦 Installation](#-installation)
+*   [Live Demo](#--live-demo)
+*   [Key Features](#--key-features)
+*   [Use Cases](#-use-cases)
+*   [Table of Contents](#-table-of-contents)
+*   [Technologies Used](#%EF%B8%8F-technologies-used)
+*   [Installation](#-installation)
     *   [Prerequisites](#prerequisites)
     *   [Getting Started](#getting-started)
-*   [🚀 Usage](#-usage)
+*   [Usage](#-usage)
     *   [Running the Development Server](#running-the-development-server)
     *   [Building for Production](#building-for-production)
-*   [📂 Project Structure](#-project-structure)
-*   [🤝 Contributing](#-contributing)
-*   [📝 License](#-license)
-*   [🙏 Acknowledgments](#-acknowledgments)
+*   [Project Structure](#-project-structure)
+*   [Contributing](#-contributing)
 
-## 🛠️ Technologies Used
+
+## Technologies Used
 
 Theom Lounge is built using a powerful and modern stack:
 
@@ -67,7 +66,7 @@ Theom Lounge is built using a powerful and modern stack:
 *   **[Tailwind CSS](https://tailwindcss.com/)** (v4) - A utility-first CSS framework for rapidly building custom designs.
 *   **[ESLint](https://eslint.org/)** (v9) - Pluggable linter for JavaScript and JSX.
 
-## 📦 Installation
+## Installation
 
 To get a local copy of Theom Lounge up and running, follow these simple steps.
 
@@ -105,7 +104,7 @@ Before you begin, ensure you have the following installed on your system:
     > [!TIP]
     > If you encounter issues with `next@16.1.6` or `react@19.2.3` due to them being very new/experimental, consider checking for updates to Next.js and React or trying a slightly older stable version if this project is a placeholder. However, for this README, we stick to the `package.json` versions.
 
-## 🚀 Usage
+## Usage
 
 Once installed, you can run Theom Lounge in development mode or build it for production.
 
@@ -185,7 +184,7 @@ theom-lounge/
 > [!NOTE]
 > The directories `Booking, Modal/` and `times, cart/` contain important files like `robots.ts`, `sitemap.ts`, and `types/index.ts`. While functional, their naming convention is unconventional and might be refactored for clarity in future development.
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions to Theom Lounge! If you have suggestions for improvements, new features, or bug fixes, please follow these steps:
 
@@ -207,13 +206,3 @@ We welcome contributions to Theom Lounge! If you have suggestions for improvemen
 
 Please provide a detailed description of your changes in the pull request.
 
-## 📝 License
-
-This project is currently **Unlicensed**. You are free to fork and modify it for personal use, but for commercial use or distribution, please clarify licensing with the original author.
-
-## 🙏 Acknowledgments
-
-*   **[Vercel](https://vercel.com/)**: For providing an excellent platform for seamless deployment of Next.js applications.
-*   **[Next.js Community](https://nextjs.org/community)**: For the fantastic framework and continuous innovation.
-*   **[React Community](https://react.dev/community)**: For the powerful UI library.
-*   **[Tailwind CSS Team](https://tailwindcss.com/community)**: For making styling a breeze.
