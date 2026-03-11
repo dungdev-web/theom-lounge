@@ -23,7 +23,7 @@ export function CartItemRow({
   return (
     <div
       className={`flex items-center gap-3 rounded-sm p-3! text-[#0A0C11] ${
-        isChild ? "bg-transparent p-2!" : "bg-white/60 p-3!"
+        isChild ? "bg-transparent p-2!" : "p-3!"
       }`}
     >
       <img
@@ -39,7 +39,6 @@ export function CartItemRow({
         {/* Main service name */}
         <div className="flex justify-between">
           {" "}
-          
           <p
             className={`font-medium text-om-brown ${isChild ? "text-xs" : "text-sm"}`}
           >
@@ -101,7 +100,12 @@ export function CartItemRow({
             <button
               onClick={() => onQuantity(item.service.id, -1)}
               aria-label="Giảm số lượng"
-              className="w-6 h-6  flex items-center justify-center text-om-brown/60 hover:border-om-gold hover:text-om-gold transition-colors text-xs"
+              disabled={(item.quantity || 0) <= 1}
+              className={`w-6 h-6 flex items-center justify-center transition-colors text-xs ${
+                (item.quantity || 0) <= 1
+                  ? "text-[#DAD7CD] cursor-not-allowed"
+                  : "text-om-brown/60 hover:border-om-gold hover:text-om-gold"
+              }`}
             >
               −
             </button>
