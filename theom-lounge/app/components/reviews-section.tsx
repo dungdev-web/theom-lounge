@@ -35,12 +35,12 @@ export function ReviewsSection() {
 
       <div className="relative z-10 text-center px-6!">
         {/* Heading */}
-        <p className="text-om-gold/80 text-xs tracking-[0.35em] uppercase mb-1! mt-[48px]!">
+        <p className="text-white text-2xl tracking-[0.35em] uppercase mb-1! mt-[48px]!">
           NHẬN XÉT TỪ
         </p>
         <h2
           id="reviews-heading"
-          className="font-serif text-4xl md:text-5xl text-white mb-[78px]! font-medium"
+          className="font-serif text-7xl! md:text-5xl text-white mb-[78px]! font-medium"
         >
           Khách Hàng
         </h2>
@@ -48,7 +48,7 @@ export function ReviewsSection() {
         {/* Cards row */}
         <div className="relative flex items-end justify-center gap-14.5 max-w-400 mx-auto">
           {/* Prev arrow */}
-          <button
+          {/* <button
             onClick={() =>
               setActive((p) => (p - 1 + REVIEWS.length) % REVIEWS.length)
             }
@@ -68,7 +68,7 @@ export function ReviewsSection() {
                 d="M15 19l-7-7 7-7"
               />
             </svg>
-          </button>
+          </button> */}
 
           {cards.map((r, i) => {
             const isCenter = i === 1;
@@ -93,7 +93,7 @@ export function ReviewsSection() {
               >
                 {/* Image */}
                 <div
-                  className={`overflow-hidden ${isCenter ? "aspect-[3/4]" : "aspect-[3/3]"}`}
+                  className={`overflow-hidden ${isCenter ? "aspect-[4.5/5]" : "aspect-[3/3]"}`}
                 >
                   <img
                     src={r.image}
@@ -104,47 +104,64 @@ export function ReviewsSection() {
                     height={isCenter ? 400 : 500}
                   />
                   {/* Quote icon */}
-                  <div className="absolute bottom-[168px]! right-3 z-10">
-                    <div className="w-8 h-8 rounded-full bg-om-gold flex items-center justify-center shadow-lg">
-                      <svg
-                        className="w-4 h-4 text-white"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M3 21c0 .55.45 1 1 1h7V10H4c-.55 0-1 .45-1 1v10zM14 22h7c.55 0 1-.45 1-1V11c0-.55-.45-1-1-1h-7v12zM8 3C5.24 3 3 5.24 3 8h5V3zm8 0v5h5c0-2.76-2.24-5-5-5z" />
-                      </svg>
-                    </div>
-                  </div>
+                 <div className="absolute bottom-[135px]! right-3 z-10">
+  <div className="flex items-center justify-center w-14 h-14 rounded-full bg-om-gold/20">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="#FCE48C"
+      stroke="#FCE48C"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="w-13 h-13 rotate-180"
+    >
+      <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
+      <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
+    </svg>
+  </div>
+</div>
                 </div>
 
                 {/* Bottom card content */}
-                <div className="bg-[#3d2c1e] px-3! py-3! min-h-[160px]">
-                  <div className="flex items-center gap-2 mb-2!">
-                    <img
-                      src={r.avatar}
-                      alt={r.name}
-                      className="w-8 h-8 rounded-full object-cover flex-shrink-0 ring-1 ring-om-gold/30"
-                      width={32}
-                      height={32}
-                      loading="lazy"
-                    />
-                    <p className="font-semibold text-white text-sm leading-tight">
-                      {r.name}
+                <div className="bg-[#3d2c1e] px-3! py-3! min-h-[160px] flex">
+                  <img
+                    src={r.avatar}
+                    alt={r.name}
+                    className="w-15 h-15 rounded-full object-cover flex-shrink-0 ring-1 ring-om-gold/30"
+                    width={40}
+                    height={40}
+                    loading="lazy"
+                  />
+                  <div className="flex flex-col items-start ml-3!">
+                    <div className="flex items-center gap-2 mb-2!">
+                      <p className="font-semibold text-white text-2xl leading-tight">
+                        {r.name}
+                      </p>
+                    </div>
+                    <p
+                      className="text-white/65 text-[14px] leading-relaxed max-w-full"
+                      style={{
+                        display: "-webkit-box",
+                        WebkitLineClamp: 4,
+                        WebkitBoxOrient: "vertical",
+                        overflow: "hidden",
+                        wordBreak: "break-all", // ← break-all thay vì break-words cho chuỗi không có space
+                      }}
+                    >
+                      {r.text}
                     </p>
+                    <button className="text-[#BC978C] text-xs mt-2! hover:underline transition-colors">
+                      Xem thêm
+                    </button>
                   </div>
-                  <p className="text-white/65 text-[14px] leading-relaxed line-clamp-4">
-                    {r.text}
-                  </p>
-                  <button className="text-om-gold text-xs mt-2! hover:underline transition-colors">
-                    Xem thêm
-                  </button>
                 </div>
               </article>
             );
           })}
 
           {/* Next arrow */}
-          <button
+          {/* <button
             onClick={() => setActive((p) => (p + 1) % REVIEWS.length)}
             aria-label="Tiếp theo"
             className="absolute -right-4 md:-right-10 bottom-1/2 z-20 p-2! text-white/50 hover:text-om-gold transition-colors"
@@ -162,7 +179,7 @@ export function ReviewsSection() {
                 d="M9 5l7 7-7 7"
               />
             </svg>
-          </button>
+          </button> */}
         </div>
 
         {/* Dots */}

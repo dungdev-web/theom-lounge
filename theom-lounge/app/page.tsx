@@ -42,7 +42,7 @@ export default function ServicesPage() {
   }, []);
 
   const handleRemove = useCallback((id: string) => {
-    setCartItems((prev) => prev.filter((i) => i.service.id !== id));
+    setCartItems((prev) => prev.filter((i) =>  i.service.id !== id && i.parentId !== id));
   }, []);
 
   const handleQuantity = useCallback((id: string, delta: number) => {
@@ -93,7 +93,7 @@ export default function ServicesPage() {
             }}
           />
 
-          <div className="divide-y divide-om-brown/5 relative z-10">
+          <div className=" relative z-10">
             {SERVICE_CATEGORIES.map((cat) => (
               <ServiceSection
                 key={cat.id}
