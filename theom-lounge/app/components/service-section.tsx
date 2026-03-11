@@ -19,7 +19,7 @@ export function ServiceSection({ category, onAdd }: ServiceSectionProps) {
       <section id={category.anchor} className="py-16! scroll-mt-32!">
         <div className="mx-auto px-12! grid grid-cols-1 lg:grid-cols-2 gap-12! items-start">
           {/* Image */}
-          <div className="relative  aspect-[5/3]  overflow-hidden rounded-sm">
+          <div className="relative  aspect-6.5/5  overflow-hidden rounded-sm">
 
             <img
               src={`/banner/${category.image}`}
@@ -63,7 +63,7 @@ export function ServiceSection({ category, onAdd }: ServiceSectionProps) {
             <img
               src={`/banner/${category.image}`}
               alt={category.imageAlt}
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              className={`w-full  object-cover hover:scale-105 transition-transform duration-700 ${category.anchor==="manicure" ? "aspect-4/5" : "h-full"}`}
               loading="lazy"
               width={900}
               height={900}
