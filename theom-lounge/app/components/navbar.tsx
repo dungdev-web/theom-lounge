@@ -10,7 +10,7 @@ function IconCart({ count, onClick }: { count: number; onClick: () => void }) {
     <button
       onClick={onClick}
       aria-label={`Giỏ hàng (${count} dịch vụ)`}
-      className="flex items-center gap-2 bg-om-gold text-white font-semibold text-sm px-4! py-2! rounded-sm hover:bg-om-gold-light bg-amber-300 transition-colors"
+      className="flex items-center button gap-2 bg-om-gold text-white font-semibold text-sm px-4! py-2! rounded-sm hover:bg-om-gold-light bg-amber-300 transition-colors"
     >
       <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m5-9v9m4-9v9m4-9l2 9" />

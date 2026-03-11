@@ -1,83 +1,141 @@
+import Image from "next/image";
+
 export function Footer() {
   return (
-    <footer className="bg-om-dark text-white/60 py-14" role="contentinfo">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-10">
-        {/* Brand */}
-        <div className="col-span-2 md:col-span-1">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 rounded-full border border-om-gold/40 flex items-center justify-center">
-              <span className="text-om-gold/80 font-serif text-xs font-bold leading-tight text-center">
-                THE<br />
-                OM
-              </span>
-            </div>
+    <footer className="bg-[#291E0A] relative text-white/60" role="contentinfo">
+      {/* Flower decoration — góc trên phải */}
+      <div className="absolute top-0 right-0 opacity-30 pointer-events-none">
+        <Image src="/banner/flower.png" alt="" width={150} height={150} />
+      </div>
+      <div className="mx-auto px-12! py-16!">
+        <div className="flex gap-120!">
+          {/* Cột 1: Logo */}
+          <div className="flex-shrink-0">
+            <a href="/" aria-label="The OM Lounge trang chủ">
+              <Image
+                src="/logo/logo.png"
+                alt="The OM Lounge Logo"
+                width={200}
+                height={200}
+                priority
+              />
+            </a>
+          </div>
+
+          {/* Cột 2: Sitemap + Liên hệ */}
+          <div className="flex-1 flex flex-col gap-10!  max-w-380">
+            {/* Hàng 1: Sitemap — 2 cột riêng biệt */}
             <div>
-              <div className="font-serif text-sm font-semibold text-white tracking-widest">
-                THE OM
+              <div className="flex items-center gap-2 mb-5!" style={{color:"#B19879"}}>
+                <span className="w-3 h-3 rounded-full bg-[#B19879] inline-block" />
+                <span className="w-3 h-3 rounded-full border border-[#B19879] inline-block" />
+                <span className="text-[10px] tracking-[0.25em] uppercase ">
+                  Sitemap
+                </span>
               </div>
-              <div className="text-[9px] tracking-[0.3em] text-om-gold/50 uppercase">
-                Lounge
+              <div className="flex gap-65!">
+                {/* Cột trái */}
+                <div className="flex flex-col gap-3! ">
+                  {["Trang chủ", "Giới thiệu", "Dịch vụ"].map((l) => (
+                    <a
+                      key={l}
+                      href="#"
+                      className="text-[24px]! text-white/70 hover:text-om-gold transition-colors"
+                    >
+                      {l}
+                    </a>
+                  ))}
+                </div>
+                {/* Cột phải */}
+                <div className="flex flex-col gap-3!">
+                  {["Tin tức", "Liên hệ"].map((l) => (
+                    <a
+                      key={l}
+                      href="#"
+                      className="text-[24px]! text-white/70 hover:text-om-gold transition-colors"
+                    >
+                      {l}
+                    </a>
+                  ))}
+                </div>
               </div>
+            </div>
+
+            {/* Hàng 2: Liên hệ + Đặt lịch */}
+            <div className="flex items-start justify-start gap-20!">
+              
+              <div className="">
+                <div className="flex items-center gap-2 mb-4!" style={{color:"#B19879"}}>
+                <span className="w-3 h-3 rounded-full bg-[#B19879] inline-block" />
+
+                <span className="w-3 h-3 rounded-full border border-[#B19879] inline-block" />
+                <span className="text-[10px] tracking-[0.25em] uppercase ">
+                  Liên hệ
+                </span>
+              </div>
+                <div className="space-y-2!">
+                  <p className="text-sm text-white/80 font-medium">
+                    +84 89 812 12 97
+                  </p>
+                  <p className="text-xs text-white/55 leading-relaxed">
+                    6 Đường G, Phú Mỹ, Quận 7, TP Hồ Chí Minh
+                    <br />
+                    (gần Crescent Mall)
+                  </p>
+                  <div className="text-xs text-white/55 space-y-1! pt-1!">
+                    <p>
+                      <span className="inline-block w-28">Thứ 2 - Thứ 6:</span>
+                      09:00 - 19:00
+                    </p>
+                    <p>
+                      <span className="inline-block w-28">
+                        Thứ 7 - Chủ nhật:
+                      </span>
+                      09:00 - 20:00
+                    </p>
+                  </div>
+                </div>
+                
+              </div>
+              <div className="flex-shrink-0 relative">
+                  <Image
+                    src="/banner/shape.png"
+                    alt=""
+                    width={250}
+                    height={250}
+                  />
+                  <span className="absolute inset-0 flex items-center justify-center text-[14px] text-[#FCE48C]">
+                    Đặt lịch ngay
+                  </span>
+                </div>
             </div>
           </div>
-          <p className="text-xs leading-relaxed">
-            Nail & Beauty Salon cao cấp. Trải nghiệm thư giãn sang trọng.
-          </p>
-          <div className="flex gap-3 mt-4">
-            {['Facebook', 'Instagram', 'TikTok'].map((s) => (
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="px-12! py-5!">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-4!">
+            {[
+              { label: "Facebook", icon: "f" },
+              { label: "TikTok", icon: "♪" },
+              { label: "Zalo", icon: "z" },
+            ].map((s) => (
               <a
-                key={s}
+                key={s.label}
                 href="#"
-                aria-label={s}
-                className="w-7 h-7 rounded-full border border-white/20 flex items-center justify-center hover:border-om-gold hover:text-om-gold transition-colors text-xs"
+                aria-label={s.label}
+                className="text-white/50 hover:text-om-gold transition-colors text-sm"
               >
-                {s[0]}
+                {s.icon}
               </a>
             ))}
           </div>
+          <p className="text-xs text-white/30">
+            © 2025 – Copyright The OM Lounge. All rights reserved.
+          </p>
         </div>
-        {/* Links */}
-        {[
-          {
-            title: 'Dịch vụ',
-            links: ['Gói Combo', 'Manicure', 'Pedicure', 'Hiệu ứng', 'Drinks'],
-          },
-          {
-            title: 'Thông tin',
-            links: ['Trang chủ', 'Giới thiệu', 'Tin tức', 'Liên hệ'],
-          },
-          {
-            title: 'Liên hệ',
-            links: [
-              '📍 123 Đường ABC, Q.1',
-              '📞 0969-886-969',
-              '✉️ hello@theomlounge.vn',
-              '🕐 09:00 – 20:00',
-            ],
-          },
-        ].map((col) => (
-          <div key={col.title}>
-            <h3 className="text-white text-xs font-semibold tracking-widest uppercase mb-4">
-              {col.title}
-            </h3>
-            <ul className="space-y-2">
-              {col.links.map((l) => (
-                <li key={l}>
-                  <a
-                    href="#"
-                    className="text-xs hover:text-om-gold transition-colors"
-                  >
-                    {l}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-      <div className="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between gap-3">
-        <p className="text-xs">© 2024 The OM Lounge. All rights reserved.</p>
-        <p className="text-xs">Chính sách bảo mật · Điều khoản sử dụng</p>
       </div>
     </footer>
   );
